@@ -14,7 +14,7 @@ puts 'Creating restaurants...'
     name: Faker::Company.name,
     address: Faker::Address.street_address,
     phone_number: Faker::Number.number(10),
-    category: ["🇨🇳", "🇮🇹", "🇯🇵", "🇫🇷", "🇧🇪"].sample
+    category: ["chinese", "italian", "japanese", "french", "belgian"].sample
   )
   restaurant.save!
 end
